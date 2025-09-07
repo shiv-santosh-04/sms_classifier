@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Classifier</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <h1>AI SMS Classifier</h1>
+        <p>Enter an SMS message below to classify it into a category.</p>
+        <textarea id="sms-input" placeholder="e.g., Your order from Flipkart has shipped..."></textarea>
+        <button id="classify-btn">Classify</button>
+        <div id="loader" class="loader" style="display: none;"></div>
+        <div id="results-container"></div>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>
