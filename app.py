@@ -7,8 +7,9 @@ app = Flask(__name__)
 
 # Load the model once when the app starts
 print("Loading Hugging Face model...")
+# Using MobileBERT, a model specifically designed for low-resource environments.
 classifier = pipeline("zero-shot-classification", 
-                        model="valhalla/distilbart-mnli-12-3")
+                        model="typeform/mobilebert-uncased-mnli")
 print("Model loaded successfully.")
 
 # Route to serve the main HTML page
